@@ -2,16 +2,26 @@
 #include <vector>
 #include <string>
 
-class Node {
+class Node
+{
 public:
-    std::string label;  // rótulo do nó
-    int index;         // índice em pré-ordem
-    std::vector<Node*> children;
-    Node* leftmost;    // usado pela função recursiva O(n) leftmost()
+    // Rotulo
+    std::string label;
 
-    Node() : index(0), leftmost(nullptr) {
+    // Índice postorder
+    int index;
+
+    // Filhos deste nó
+    std::vector<Node *> children;
+
+    // Ponteiro para o nó folha mais à esquerda da subárvore enraizada neste nó
+    Node *leftmost;
+
+    Node() : index(0), leftmost(nullptr)
+    {
     }
 
-    Node(std::string label) : label(label), index(0), leftmost(nullptr) {
+    Node(std::string label) : label(label), index(0), leftmost(nullptr)
+    {
     }
 };
