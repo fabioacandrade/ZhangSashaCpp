@@ -31,5 +31,3 @@ Ele irá gerar árvores aleatórias com rótulos compartilhados e diferenças es
 ## Pastas
 - `zhangshasha/` — implementação do algoritmo de Zhang-Shasha
 - `guloso/` — implementação do algoritmo guloso
-
-> **Atenção:** Os arquivos `main.cpp` das pastas `zhangshasha` e `guloso` não executam mais testes. Use apenas o `comparacao.cpp` para comparar os algoritmos.
