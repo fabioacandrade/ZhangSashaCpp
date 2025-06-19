@@ -4,43 +4,8 @@
 #include <sstream>
 #include <algorithm>
 #include <climits>
-#include "Node.cpp"
-
-// Arvore ordenada rotulada
-class Tree
-{
-public:
-    Node *root;
-
-    // vetor que armazena as folhas mais à esquerda de cada nó em pós-ordem
-    std::vector<int> l;
-
-    // vetor que armazena os keyroots => keyroots sao usados como pontos de partida para calcular a distancia entre subarvores
-    std::vector<int> keyroots;
-
-    // vetor que armazena os rótulos dos nós em pós-ordem
-    std::vector<std::string> labels;
-
-    // Matriz de distância entre subárvores
-    static std::vector<std::vector<int>> TD;
-
-    // Construtor
-    Tree(std::string s);
-    void traverse();
-    void index();
-    void l_func();
-    void keyroots_func();
-    static int ZhangShasha(Tree &tree1, Tree &tree2);
-
-private:
-    Node *parseTree(const std::string &s, int &pos);
-    std::vector<std::string> &traverse_postorder(Node *node, std::vector<std::string> &labels);
-    int index_postorder(Node *node, int &idx);
-    void l_postorder(Node *node, std::vector<int> &l_vec);
-    void leftmost();
-    void leftmost_postorder(Node *node);
-    static int treedist(std::vector<int> &l1, std::vector<int> &l2, int i, int j, Tree &tree1, Tree &tree2);
-};
+#include "Tree.h"
+#include "Node.h"
 
 // Construtor: recebe uma string na notação e monta a árvore
 // Exemplo de notação: "f(d(a c(b)) e)"
