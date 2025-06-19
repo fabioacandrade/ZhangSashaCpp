@@ -22,9 +22,6 @@ void run_test(const std::string &desc, const std::string &s1, const std::string 
 
 int main()
 {
-    std::cout << "==== Exemplos para o algoritmo guloso ====" << std::endl;
-    run_test("Exemplo 1", "1(2(4 5) 3)", "1(3 2(4 5))");
-    run_test("Exemplo 2", "1(2(4 5) 3(6 7(8)))", "1(2(4 5) 3(6 7(9)))");
-    run_test("Exemplo 3", "1", "2(3)");
+    std::cout << "Este executável não possui testes. Use comparacao.cpp para comparar os algoritmos." << std::endl;
     return 0;
 }

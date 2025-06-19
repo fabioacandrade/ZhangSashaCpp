@@ -2,19 +2,12 @@
 
 Implementação de um algoritmo guloso para calcular a distância de edição entre árvores ordenadas.
 
-## Como compilar e executar
+> **Atenção:** Os testes foram removidos deste diretório. Use o programa `comparacao.cpp` na raiz do projeto para comparar os algoritmos.
 
-No diretório `guloso`, compile e execute:
+## Compilação (apenas para uso como biblioteca)
 
 ```
-g++ -o guloso main.cpp ted_guloso.cpp -std=c++11
-./guloso.exe
+g++ -c ted_guloso.cpp -std=c++11
 ```
 
-## Exemplo de uso
-
-O arquivo `main.cpp` já possui exemplos de teste semelhantes aos do algoritmo de Zhang-Shasha.
-
-## Observação
-
-Este método é uma alternativa ao algoritmo clássico de Zhang-Shasha, podendo apresentar resultados diferentes em alguns casos.
+Inclua o objeto ao compilar o comparador.
